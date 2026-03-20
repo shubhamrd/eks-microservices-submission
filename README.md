@@ -2,7 +2,7 @@
 
 **Submitted by:** Shubham  
 **Date:** 20 March 2026  
-**Task:** Deploy the Weaveworks Sock Shop Microservices Demo on AWS EKS with a publicly accessible Network Load Balancer for the front-end service.
+**Task:** Deploy the Weaveworks Sock Shop Microservices Demo on AWS EKS with a publicly accessible Load Balancer for the front-end service.
 
 ---
 
@@ -30,7 +30,7 @@ Edited `deploy/kubernetes/complete-demo.yaml` to configure the `front-end` servi
 
 **Changes made:**
 - Changed the `front-end` Service `type` to `LoadBalancer`
-- Added AWS Load Balancer Controller annotations to create an **internet-facing Network Load Balancer (NLB)**:
+- Added AWS Load Balancer Controller annotations to create an **internet-facing Load Balancer **:
 
 ```yaml
 apiVersion: v1
